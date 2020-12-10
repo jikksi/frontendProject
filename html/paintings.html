@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/paintings.css">
     <title>Document</title>
 </head>
 <body>
@@ -39,14 +39,43 @@
         <div class="navigation">
             <div class="menu">
                 <a href="homepage.html">Home</a>
-                <a href="best_sellers.html?page=1">Best Sellers</a>
-                <a href="paintings.html?page=1">Painting</a>
+                <a href="best_sellers.html?page=1" >Best Sellers</a>
+                <a href="paintings.html?page=1" id="menu-item-paintings">Painting</a>
                 <a href="photography.html?page=1">Photography</a>
-                <a href="drawing.html?page=1">Drawing</a>
             </div>
         </div>
         <div class="content">
+            <div class="filter">
+                <div class="filter-by">
+                    <a class="filter-by-item" id="filter-all-item" href="">All items</a>
+                    <a class="filter-by-item" id="filter-exclusive" href="">Exclusives</a>
+                </div>
+                <div class="sort-by">
+                    <select class="sort-by-item" name="" id="">
+                        Sort by: 
+                        <option value="">Newest</option>
+                        <option value="">Most Popular</option>
+                        <option value="">Price(Low to High)</option>
+                        <option value="">Price(High to low)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-container" id="grid">
+                
+            </div>
+            <div class="pagination">
+                <div class="pagination-menu">
 
+                    <a class="pagination-menu-item" href="">1</a>
+                    <a class="pagination-menu-item" href="">1</a>
+                    <a class="pagination-menu-item" href="">1</a>
+                    <a class="pagination-menu-item" href="">1</a>
+                    <a class="pagination-menu-item" href="">1</a>
+                    <a class="pagination-menu-item" href="">1</a>
+                    <a class="pagination-menu-item" href="">1</a>
+                    
+                </div>
+            </div>
         </div>
 
         <div class="navigation-fullscreen" id="nav-full">
@@ -54,5 +83,7 @@
         </div>
     </div>
     <script src="../js/main.js"></script>
+    <script src="../js/paintings.js"></script>
+    <script src="../js/grid.js"></script>
 </body>
 </html>

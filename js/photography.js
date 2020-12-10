@@ -1,14 +1,15 @@
 
 window.addEventListener('DOMContentLoaded', (event) => onload());
 var data;
-
 function onload(){
+    console.log('loaded')
     fetch_data()
 }
-function fetch_data(url){
+
+function fetch_data(){
     var urlParams = new URLSearchParams(window.location.search);
     var keys = urlParams.keys();
-    const target = new URL("http://localhost:80/best_sellers.php");
+    const target = new URL("http://localhost:80/photography.php");
     const params = new URLSearchParams();
     for(key of keys) { 
         params.set(key, urlParams.get(key));
@@ -35,6 +36,7 @@ function draw_items(){
         draw_item(data[i])
     }
 }
+
 window.onresize = function(event) {
     change_grid_style();
 };
