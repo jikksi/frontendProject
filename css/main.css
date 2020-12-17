@@ -1,0 +1,164 @@
+
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    position: relative;
+}
+.header{
+    height: 8vh;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo{
+    height: 80%;
+    width: 150px;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn{
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: burlywood;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.icon-btn:hover{
+    background: rgb(245, 207, 157);
+}
+
+#heart-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.info-bar{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.info-bar-menu{
+    position: absolute;
+    top: 0px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 20;
+    visibility: hidden;
+    
+}
+
+.info-bar-menu > ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-bar-menu > ul > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    color: whitesmoke;
+    white-space: nowrap;
+}
+
+.info-bar-menu > ul > li > a:hover {
+    background-color: burlywood;
+}
+
+
+/*  navigation */
+
+.navigation{
+    background-color: sienna;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.menu  a{
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu  a:hover{
+    background-color: rgb(218, 159, 82);
+    cursor: pointer;
+}
+
+#menu-btn{
+    display: none;
+    margin-left: 3px;
+}
+
+
+.navigation-fullscreen{
+    background-color: burlywood;
+    height: 92vh;
+    width: 100%;
+    display: none;
+    border-style: ridge;
+    border-width: 2px;
+    z-index: 20;
+    position: absolute;
+    left: -1000px;
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .menu{
+        flex-direction: column;
+        width: 100%;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .navigation{
+        flex-direction: column;
+    }
+    #menu-btn{
+        display: inline;
+        margin-left: 3px;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .header-right{
+        visibility: hidden;
+    }
+
+    #logo{
+        margin-left: 45px;
+    }
+    .navigation-fullscreen{
+        display: block;
+        visibility: hidden;
+    }
+}

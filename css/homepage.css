@@ -1,0 +1,32 @@
+.content{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    color: sandybrown;
+}
+
+.view-by-type{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.by-type-item{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.by-type-item > label{
+    display: block;
+    text-align: center;
+}
+
+#item-image{
+    width: 100%;
+    height: 150px;
+}
