@@ -90,16 +90,6 @@ $data = [
         "About" => "",
         "Details" => ""
     ],
-    [
-        "ID" => 1,
-        "Type" => '',
-        "Title" => "",
-        "Artist" =>"",
-        "Price" => "",
-        "Size" => "",
-        "About" => "",
-        "Details" => ""
-    ],
 ];
 
 
