@@ -446,6 +446,11 @@ if($_SERVER['REQUEST_METHOD'] === 'GET') {
     $data_size = count($data);
     $from = $page * 12;
     $to = $from + 12;
-    echo json_encode(array_slice($data,$from ,$to));
+    
+    $max_page = $data_size / 12;
+    echo json_encode([
+        "max_page" =>$max_page ,
+        "data"=>array_slice($data,$from ,12)
+    ]);
 }
 ?>

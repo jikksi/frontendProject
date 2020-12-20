@@ -30,11 +30,13 @@ function fetch_data(){
 }
 
 function draw_items(){
-    console.log(data)
+    let array = data.data
+    console.log(array)
     let grid = document.getElementById('grid');
-    for ( i=0; i < data.length; i++) {
-        draw_item(data[i])
+    for ( i=0; i < array.length; i++) {
+        draw_item(array[i])
     }
+    draw_pagination();
 }
 
 window.onresize = function(event) {

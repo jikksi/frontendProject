@@ -253,6 +253,10 @@ body{
     cursor: pointer;
     background-color:rgb(185, 169, 169)
 }
+#selected-pagination-menu-item{
+    background-color: cadetblue;
+    color: whitesmoke;
+}
 
 
 .filter{
