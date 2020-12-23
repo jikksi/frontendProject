@@ -246,6 +246,7 @@ body{
     
 }
 .pagination-menu-item{
+    color: #5d8392;
     padding: 10px 20px 10px;
     text-decoration: none;
 }
@@ -283,21 +284,24 @@ body{
 .filter-by-item{
     padding: 10px 15px 10px 15px;
     text-decoration: none;
-    color: whitesmoke;
+    color:  rgb(40, 117, 161);;
     white-space: nowrap;
+    background-color: whitesmoke;
 }
+.filter-by-item:hover{
+    cursor: pointer;
+}
+
+.filter-by-item-selected{
+    background-color: rgb(40, 117, 161);
+    color: whitesmoke;
+}
+
 option{
     padding: 10px;
     color: rgb(40, 117, 161);;
 }
 
-#filter-all-item{
-    background-color:rgb(40, 117, 161) ;
-}
-#filter-exclusive{
-    color:rgb(40, 117, 161);
-    border: 1px solid gray;
-}
 
 
 @media only screen and (max-width: 1450px) {
