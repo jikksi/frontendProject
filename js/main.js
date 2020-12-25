@@ -47,28 +47,42 @@ document.getElementById('filter-exclusive').addEventListener('click',function(){
     selectExclusiveItems()
     var searchParams = new URLSearchParams(window.location.search);
     searchParams.set("filter", "exclusive");
+    searchParams.set("page",1)
     window.location.search = searchParams.toString();
 
 })
+
+
 document.getElementById('filter-all-item').addEventListener('click',function(){
-   
     selectAllFilter()
     var searchParams = new URLSearchParams(window.location.search);
     searchParams.set("filter", "all");
+    searchParams.set("page",1)
+    window.location.search = searchParams.toString();
+})
+
+document.getElementById('sort-select').addEventListener('change',function(){
+    var searchParams = new URLSearchParams(window.location.search);
+    searchParams.set("sort", this.value);
     window.location.search = searchParams.toString();
 })
 
 function checkQueryParameters(){
-    console.log("check")
     var urlParams = new URLSearchParams(window.location.search);
     var keys = urlParams.keys();
     for(key of keys){
-        console.log(key)
         if(key == 'filter' && urlParams.get(key) == "exclusive"){
-            console.log('here')
             selectExclusiveItems()
         }
+        if(key === 'sort'){
+            console.log('here')
+            setSortValue(urlParams.get(key))
+        }
     }
+}
+
+function setSortValue(value){
+    document.getElementById('sort-select').value = value;  
 }
 
 function selectExclusiveItems(){
@@ -85,16 +99,11 @@ function selectAllFilter(){
     all_item.classList.add("filter-by-item-selected");
 }
 
-// document.getElementById('sort-select').addEventListener('change', function() {
-//     var searchParams = new URLSearchParams(window.location.search);
-//     searchParams.set("sort", this.value);
-//     window.location.search = searchParams.toString();
-// });
-
-
 
 
 checkQueryParameters()
+
+
 let user_btn = document.getElementById('my-profile');
 user_btn.onmouseover = ()=>show_Info_bar();
 user_btn.onmouseout = ()=>hide_info_bar();

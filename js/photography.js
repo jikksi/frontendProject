@@ -39,6 +39,8 @@ function draw_items(){
     draw_pagination();
 }
 
+
+
 window.onresize = function(event) {
     change_grid_style();
 };
