@@ -8,7 +8,7 @@ function draw_item(data){
     img_container.className = "img-container"
     let img_link = document.createElement("a");
     img_link.className = "img-link"
-    img_link.href = ""
+    img_link.href = "product.html?id="+data.ID
     let img = document.createElement("img");
     img.className = "grid-item-img"
     img.src = data.img
