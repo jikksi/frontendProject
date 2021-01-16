@@ -1,10 +1,14 @@
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get('id')
+let buy_btn = document.getElementById('buy-btn');
+let like_btn = document.getElementById('heart-btn-products');
+if(!isLogedIn()){
+    buy_btn.classList.add('invisible')
+    like_btn.classList.add('invisible')
+}
 if(id!=null){
     fetch_image(id)
 }
-
-
 
 function fetch_image(id){
     console.log(id)
@@ -26,16 +30,6 @@ function fetch_image(id){
 }
 
 
-// [
-//     "ID" => 29,
-//     "Type" => 'PARMA CHAMPAGNE WIDE FRAME',
-//     "Title" => "Swan, Europe, 1971",
-//     "Artist" =>"Brett Weston",
-//     "Price" => 750,
-//     "Size" => "70 x 150",
-//     "img" => "http://localhost:80/images/29.jpg"
-// ],
-
 function draw(data){
     console.log(data)
     document.getElementById('product-img').src =data.img;
@@ -43,3 +37,14 @@ function draw(data){
     document.getElementById('artist-label').innerHTML = data.Artist
     document.getElementById('type-label').innerHTML = data.Type
 }
+
+like_btn.addEventListener('click',function(){
+    console.log({
+        imgId : id,
+        userId : window.localStorage.getItem('id')
+    })
+})
+
+buy_btn.addEventListener('click',function(){
+    console.log('buy')
+})

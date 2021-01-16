@@ -4,13 +4,13 @@ header("Access-Control-Allow-Methods: GET,PUT,POST,DELETE,PATCH,OPTIONS");
 header("Access-Control-Allow-Headers:  Content-Type,authorization");
 header('Content-Type: application/json');
 
-$users = [
-    [
-        "id" => 1,
-        "username" => "giorgi",
-        "password" => "12345678"
-    ]
-];
+
+
+if(file_exists('users_base.txt')){
+    $users = unserialize(file_get_contents('users_base.txt'));
+}else{
+    $users = [];
+}
 
 if($_SERVER['REQUEST_METHOD'] === 'OPTIONS'){
     die('OK');
@@ -44,11 +44,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             ],400);
         }
         array_push($users,[
-            "id" => count($users),
+            "id" => count($users)+1,
             "username" => $username,
             "password" => $password
         ]);
+        file_put_contents('users_base.txt', serialize($users));
         respond([
+            "id" =>count($users),
             "message" => "User registered Succesfully"
         ],200);
     }
