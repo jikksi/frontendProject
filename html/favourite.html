@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/paintings.css">
+    <link rel="stylesheet" href="../css/favourite.css">
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
                         <div id="info-bar-menu-logged" class="info-bar-menu">
                             <ul>
                                 <li><a href="./profile.html">Profile</a></li>
-                                <li><a href="./favourite.html">Favourite</a></li>
+                                <li><a href="./favourite.html">Favorite</a></li>
                                 <li><a href="" id="logout-btn" style="color: red;">Log out</a></li>
                             </ul>
                         </div>
@@ -38,37 +39,32 @@
         </div>
         <div class="navigation">
             <div class="menu">
-                <a href="homepage.html">Home</a>
-                <a href="best_sellers.html?page=1" >Best Sellers</a>
-                <a href="paintings.html?page=1" id="menu-item-paintings">Painting</a>
+                <a href="homepage.html" id="menu-item-homepage">Home</a>
+                <a href="best_sellers.html?page=1">Best Sellers</a>
+                <a href="paintings.html?page=1">Painting</a>
                 <a href="photography.html?page=1">Photography</a>
             </div>
         </div>
         <div class="content">
-            <div class="filter">
-                <div class="filter-by">
-                    <button class="filter-by-item filter-by-item-selected" id="filter-all-item">All items</button>
-                    <button class="filter-by-item" id="filter-exclusive">Exclusives</button>
+            <label id="favorite-lbl">Favorite</label>
+            <div id="empty-box" class="invisible">
+                <label id="missing-label">Looks like you don’t have anything in your favorites yet.</label>
+                <div>
+                    <img id="empty-box-img" src="../box.svg" alt="">
                 </div>
-                <div class="sort-by">
-                    <select class="sort-by-item" id="sort-select">
-                        Sort by: 
-                        <option value="new">Newest</option>
-                        <option value="popular">Most Popular</option>
-                        <option value="ltoh">Price(Low to High)</option>
-                        <option value="htol">Price(High to low)</option>
-                    </select>
-                </div>
+                <a id="btn-art" href="./best_sellers.html?page=1">ArtLove</a>
             </div>
+
             <div class="grid-container" id="grid">
-                
+
             </div>
             <div class="pagination">
                 <div class="pagination-menu" id="pagination-menu">
-
                     
                 </div>
             </div>
+        </div>
+
         </div>
 
         <div class="navigation-fullscreen" id="nav-full">
@@ -76,9 +72,6 @@
         </div>
     </div>
     <script src="../js/main.js"></script>
-    <script src="../js/paintings.js"></script>
-    <script src="../js/grid.js"></script>
-    <script src="../js/pagination.js"></script>
-    <script src="../js/filter.js"></script>
+    <script src="../js/favorite.js"></script>
 </body>
 </html>

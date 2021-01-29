@@ -52,6 +52,10 @@ document.getElementById('logout-btn').addEventListener('click',function(event){
     event.preventDefault();
 })
 
+document.getElementById('heart-btn').addEventListener('click',function(){
+    window.location.href="favourite.html"
+})
+
 let user_btn = document.getElementById('my-profile');
 user_btn.onmouseover = ()=>show_Info_bar();
 user_btn.onmouseout = ()=>hide_info_bar();

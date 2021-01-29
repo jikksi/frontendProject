@@ -38,6 +38,7 @@ function draw_item(data){
 
 }
 
+
 function change_grid_style(){
     let grid = document.getElementById('grid');
     var w = window.innerWidth;

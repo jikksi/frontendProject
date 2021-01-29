@@ -5,11 +5,17 @@ header("Access-Control-Allow-Headers:  Content-Type,authorization");
 header('Content-Type: application/json');
 
 
-
+include('data.php');
 if(file_exists('users_base.txt')){
     $users = unserialize(file_get_contents('users_base.txt'));
 }else{
     $users = [];
+}
+
+if(file_exists('favorites.txt')){
+    $favorites = unserialize(file_get_contents('favorites.txt'));
+}else{
+    $favorites = [];
 }
 
 if($_SERVER['REQUEST_METHOD'] === 'OPTIONS'){
@@ -54,7 +60,83 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             "message" => "User registered Succesfully"
         ],200);
     }
+
+
+    if($action == 'add_favorite'){
+        $user_id = $obj->userId;
+        $img_id = $obj->imgId;
+        $added = true;
+        if(array_key_exists($user_id,$favorites)){
+            if(in_array($img_id,$favorites[$user_id])){
+                $index = array_search($img_id,$favorites[$user_id]);
+                unset($favorites[$user_id][$index]);
+                $added = false;
+            }else{
+                array_push($favorites[$user_id],$img_id);
+            }
+        }else{
+            $favorites[$user_id] = array($img_id);
+        }
+        file_put_contents('favorites.txt', serialize($favorites));
+        respond([
+            "favorites" =>$favorites[$user_id],
+            "added" => $added,
+            "message" => "Added Succesfully"
+        ],200);
+    }
     
+}
+
+if($_SERVER['REQUEST_METHOD'] === 'GET'){
+    $action = $_GET['action'];
+    if($action == 'is_favorite'){
+        $img_id = $_GET['imgId'];
+        $user_id = $_GET['userId'];
+        if(isFavorite($user_id,$img_id)){
+            respond([
+                "isFavorite" => true,
+            ],200);
+        }
+        respond([
+            "isFavorite" => false,
+        ],200);
+    }
+
+    if($action == 'get_favorites'){
+        $user_id = $_GET['userId'];
+        respond([
+            "data" =>get_favorite_images($favorites[$user_id])
+        ],200);
+    }
+}
+
+
+function get_favorite_images($array){
+    $result = [];
+    foreach($array as $img_id){
+        array_push($result,get_image($img_id));
+    }
+    return $result;
+}
+
+function get_image($id){
+    global $data;
+    foreach($data as $image){
+        if($image['ID'] == $id){
+            return $image;
+        }
+    }
+}
+
+
+function isFavorite($user_id , $img_id){
+    global $favorites;
+    if(array_key_exists($user_id,$favorites)){
+        if(in_array($img_id,$favorites[$user_id])){
+            return true;
+        }
+    }
+    return false;
 }
 
 function getUser($username,$password){

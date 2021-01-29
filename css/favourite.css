@@ -1,0 +1,34 @@
+#favorite-lbl{
+    color: #907957;
+    border-bottom: 1px solid #384242;
+    font-size: xx-large;
+    margin-top: 20px;
+}
+
+#empty-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#empty-box-img{
+    width: 300px;
+}
+
+#btn-art{
+    padding: 10px;
+    background-color: teal;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#missing-label{
+    color: #d4912d;
+    font-size: larger;
+    font-family: fantasy;
+}
+
+.invisible{
+    display: none !important;
+}

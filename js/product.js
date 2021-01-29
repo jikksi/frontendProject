@@ -44,8 +44,67 @@ like_btn.addEventListener('click',function(){
         imgId : id,
         userId : window.localStorage.getItem('id')
     })
+    const data = { 
+        action: "add_favorite",
+        imgId : id,
+        userId : window.localStorage.getItem('id')
+    };
+
+    fetch('http://localhost:80/users.php', {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) {
+            response.json().then(json =>{
+                displayError(json.message)
+            })
+            return;
+        }
+        response.json().then(json => {
+            console.log(json)
+            if(json.added){
+                like_btn.classList.add('selected');
+            }else{
+                like_btn.classList.remove('selected');
+            }
+        })
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 })
 
 buy_btn.addEventListener('click',function(){
     console.log('buy')
 })
+
+function isFavorite(){
+    console.log('isFavorite')
+    fetch('http://localhost:80/users.php?imgId='+id+"&userId="+window.localStorage.getItem('id')+'&action=is_favorite')
+    .then(response => {
+        if (!response.ok) {
+            response.json().then(json =>{
+                console.log(json)
+            })
+            return;
+        }
+        response.json().then(json => {
+            if(json.isFavorite){
+                console.log('yes')
+                like_btn.classList.add('selected');
+            }
+        })
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
+
+isFavorite();
+
+
+
