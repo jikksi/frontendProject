@@ -1,6 +1,11 @@
 let isLogedIn = function(){
-    return false;
+    let id = window.localStorage.getItem('id')
+    if(id == null){
+        return false
+    }
+    return true;
 }
+
  
 let show_Info_bar = function(){
     if(isLogedIn()){
@@ -41,7 +46,11 @@ let show_hide_navbar = function(){
     // }
 }
 document.getElementById('menu-btn').addEventListener('click',()=>show_hide_navbar())
-
+document.getElementById('logout-btn').addEventListener('click',function(event){
+    window.localStorage.removeItem('id')
+    window.location.reload()
+    event.preventDefault();
+})
 
 let user_btn = document.getElementById('my-profile');
 user_btn.onmouseover = ()=>show_Info_bar();
