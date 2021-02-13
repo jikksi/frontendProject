@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="icon-btn" id="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <img id="logo" src="../logo.svg" alt="logo" >
+            <div class="header-right">
+                <button class="icon-btn" id="heart-btn"><img id="heart-icon" src="../heart.svg" alt="heart"></button>
+                <div class="my-profile" id="my-profile">
+                    <button class="icon-btn" id="user-btn"><img id="user-icon" src="../user.svg" alt="user"></button>
+                    <div id="info-bar-menu-not-logged" class="info-bar-menu">
+                        <ul>
+                            <li><a href="./login.html">Log in</a></li>
+                            <li><a href="">Register</a></li>
+                        </ul>
+                    </div>
+                    <div id="info-bar-menu-logged" class="info-bar-menu">
+                        <ul>
+                            <li><a href="./profile.html">Profile</a></li>
+                            <li><a href="">Saved Painting</a></li>
+                            <li><a href="" id="logout-btn" style="color: red;">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="menu">
+                <a href="homepage.html">Home</a>
+                <a href="best_sellers.html?page=1" id="menu-item-best-seller">Best Sellers</a>
+                <a href="paintings.html?page=1" >Painting</a>
+                <a href="photography.html?page=1">Photography</a>
+            </div>
+        </div>
+        <div class="profile-container">
+            <div id="profile-box">
+                <div id="account-box">
+                    <label id="account-lbl">Account Settings</label>
+                    <div id="username-box">
+                        <label >Username : </label>
+                        <label id="username-lbl">Giorgi jikia</label>
+                    </div>
+                    <label id="change-passord-lbl">Change Password</label>
+                    <div id="password-box">
+                        <input class="password-input" id="password-input" type="password" placeholder="Current Password">
+                        <input class="password-input" id="repeat-password-input" type="password" placeholder="New Password">
+                        <button id="update-btn">Update Password</button>
+                    </div>
+                </div>
+                <div id="history-box">
+                    <label id="order-lbl">Order History</label>
+                    <div id="order-box">
+                        <table>
+                            <tr>
+                              <th>Title</th>
+                              <th>Price</th>
+                              <th>Date</th>
+                            </tr>
+                            <tr>
+                              <td>Alfreds Futterkiste</td>
+                              <td>Maria Anders</td>
+                              <td>Germany</td>
+                            </tr>
+                            <tr>
+                              <td>Centro comercial Moctezuma</td>
+                              <td>Francisco Chang</td>
+                              <td>Mexico</td>
+                            </tr>
+                            <tr>
+                              <td>Ernst Handel</td>
+                              <td>Roland Mendel</td>
+                              <td>Austria</td>
+                            </tr>
+                            <tr>
+                              <td>Island Trading</td>
+                              <td>Helen Bennett</td>
+                              <td>UK</td>
+                            </tr>
+                            <tr>
+                              <td>Laughing Bacchus Winecellars</td>
+                              <td>Yoshi Tannamuri</td>
+                              <td>Canada</td>
+                            </tr>
+                            <tr>
+                              <td>Magazzini Alimentari Riuniti</td>
+                              <td>Giovanni Rovelli</td>
+                              <td>Italy</td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <div class="navigation-fullscreen" id="nav-full">
+
+        </div> -->
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

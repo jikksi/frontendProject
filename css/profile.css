@@ -1,0 +1,125 @@
+#account-box{
+    display: flex;
+    flex-direction: column;
+}
+#profile-box{
+    margin-top: 10px;
+}
+
+.password-input{
+    margin: 4px 0px 4px 0px;
+    width: 400px;
+    padding: 7px;
+}
+
+#account-lbl{
+    color: #423e38;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#username-lbl{
+    color: cadetblue;
+}
+
+#update-btn{
+    color: whitesmoke;
+    background-color: #6d8ea2;
+    width: 400px;
+    padding: 7px;
+    box-sizing: content-box;
+}
+#update-btn:hover{
+    cursor: pointer;
+}
+
+#username-box{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: larger;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+
+#history-box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#order-lbl{
+    color: #423e38;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.profile-container{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#change-passord-lbl{
+    font-size: larger;
+}
+
+#password-box{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#order-box{
+    margin-top: 30px;
+    margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 650px) {
+    .profile-container{
+        width: 90%;
+    }
+    .password-input{
+        width: 100%;
+    }
+    
+    #update-btn{
+        width: 100%;
+    }
+
+    #account-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #username-box{
+       text-align: center;
+    }
+    #password-box{
+       width: 100%;
+       align-items: center;
+    }
+    
+}

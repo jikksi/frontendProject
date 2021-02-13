@@ -34,8 +34,9 @@ function draw(data){
     console.log(data)
     document.getElementById('product-img').src =data.img;
     document.getElementById('title-label').innerHTML = data.Title
-    document.getElementById('artist-label').innerHTML = data.Artist
+    document.getElementById('artist-label').innerHTML = "By "+data.Artist
     document.getElementById('type-label').innerHTML = data.Type
+    document.getElementById('price-label').innerHTML = data.Price + '$'
 }
 
 like_btn.addEventListener('click',function(){

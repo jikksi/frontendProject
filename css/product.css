@@ -60,6 +60,15 @@
     padding: 0px 20px;
 }
 
+#price-label{
+    color: #dc2121;
+    font-family: monospace;
+    font-size: xx-large;
+    font-style: italic;
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+
 #type-label{
     font-family: fantasy;
     font-size: larger;
