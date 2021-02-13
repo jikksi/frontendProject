@@ -79,7 +79,32 @@ like_btn.addEventListener('click',function(){
 })
 
 buy_btn.addEventListener('click',function(){
-    console.log('buy')
+    const data = { 
+        action: "add_history",
+        imgId : id,
+        userId : window.localStorage.getItem('id')
+    };
+    fetch('http://localhost:80/users.php', {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) {
+            response.json().then(json =>{
+                displayError(json.message)
+            })
+            return;
+        }
+        response.json().then(json => {
+           console.log(json);
+        })
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 })
 
 function isFavorite(){

@@ -18,6 +18,12 @@ if(file_exists('favorites.txt')){
     $favorites = [];
 }
 
+if(file_exists('history.txt')){
+    $order_history = unserialize(file_get_contents('history.txt'));
+}else{
+    $order_history = [];
+}
+
 if($_SERVER['REQUEST_METHOD'] === 'OPTIONS'){
     die('OK');
 } 
@@ -84,6 +90,22 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             "message" => "Added Succesfully"
         ],200);
     }
+
+
+    if($action == 'add_history'){
+        $user_id = $obj->userId;
+        $img_id = $obj->imgId;
+        if(array_key_exists($user_id,$order_history)){
+            array_push($order_history[$user_id],$img_id);
+        }else{
+            $order_history[$user_id] = array([$img_id,date("Y-m-d H:i:s")]);
+        }
+        file_put_contents('history.txt', serialize($order_history));
+        respond([
+            "history" =>$order_history[$user_id],
+            "message" => "Added Succesfully"
+        ],200);
+    }
     
 }
 
@@ -108,8 +130,46 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
             "data" =>get_favorite_images($favorites[$user_id])
         ],200);
     }
+
+
+
+    if($action == 'get_username'){
+        $user_id = $_GET['userId'];
+        respond([
+            'username' => get_user($user_id)
+        ],200);
+    }
+
+
+    if($action == 'get_history'){
+        $user_id = $_GET['userId'];
+        $result = get_history($order_history[$user_id]);
+        respond([
+            "data" => $result
+        ],200);
+    }
 }
 
+
+function get_history($array){
+    $result = [];
+    foreach($array as $item){
+        array_push($result,[
+            "item" => get_image($item[0]),
+            "date" => $item[1]
+        ]);
+    }
+    return $result;
+}
+function get_user($id){
+    global $users;
+    foreach($users as $user){
+        if($user['id']==$id){
+            return $user['username'];
+        }
+    }
+    return '';
+}
 
 function get_favorite_images($array){
     $result = [];

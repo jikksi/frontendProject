@@ -86,6 +86,14 @@ td, th {
     text-align: left;
     padding: 8px;
 }
+td{
+    color: rgb(13 63 92);
+    font-size: larger;
+}
+
+th{
+    color: #2c4f65;
+}
   
 tr:nth-child(even) {
     background-color: #dddddd;
@@ -120,6 +128,10 @@ tr:nth-child(even) {
     #password-box{
        width: 100%;
        align-items: center;
+    }
+
+    td{
+        font-size: small;
     }
     
 }
