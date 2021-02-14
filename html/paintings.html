@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/paintings.css">
     <title>Document</title>
@@ -34,6 +35,21 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+        <div class="navigation-fullscreen invisible" id="nav-full">
+            <a href="homepage.html">Home</a>
+            <a href="best_sellers.html?page=1" >Best Sellers</a>
+            <a href="paintings.html?page=1" id="menu-item-paintings-full">Painting</a>
+            <a href="photography.html?page=1">Photography</a>
+            <div class="vertical-menu" id="logged-nav-menu">
+                <a href="./profile.html">Profile</a>
+                <a href="./favourite.html">Favourite</a>
+                <a href="" id="logout-btn-nav" style="color: red;">Log out</a>
+            </div>
+            <div class="vertical-menu" id="not-logged-nav-menu">
+                <a href="./login.html" class="btn-nav">Log in</a>
+                <a href="./register.html" class="btn-nav">Register</a>
             </div>
         </div>
         <div class="navigation">
@@ -69,10 +85,6 @@
                     
                 </div>
             </div>
-        </div>
-
-        <div class="navigation-fullscreen" id="nav-full">
-
         </div>
     </div>
     <script src="../js/main.js"></script>

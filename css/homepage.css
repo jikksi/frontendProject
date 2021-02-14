@@ -12,3 +12,7 @@
 #menu-item-homepage{
     border-bottom: 2px solid black;
 }
+#menu-item-homepage-full{
+    background-color: steelblue;
+    color: whitesmoke;
+}

@@ -96,7 +96,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user_id = $obj->userId;
         $img_id = $obj->imgId;
         if(array_key_exists($user_id,$order_history)){
-            array_push($order_history[$user_id],$img_id);
+            array_push($order_history[$user_id],[$img_id,date("Y-m-d H:i:s")]);
         }else{
             $order_history[$user_id] = array([$img_id,date("Y-m-d H:i:s")]);
         }
@@ -105,6 +105,24 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             "history" =>$order_history[$user_id],
             "message" => "Added Succesfully"
         ],200);
+    }
+
+    if($action == 'change_password'){
+        $currentPassword = $obj->current;
+        $new = $obj->new;
+        $user_id = $obj->userId;
+        if($users[$user_id]['password'] == $currentPassword){
+            $users[$user_id]['password'] = $new;
+            file_put_contents('users_base.txt', serialize($users));
+            respond([
+                "message" => "Password Changed Succsessfuly!"
+            ],200);
+        }else{
+            respond([
+                "message" => "Password is incorrect!!!"
+            ],400);
+        }
+        
     }
     
 }

@@ -63,5 +63,60 @@ function draw_table(data){
     }
 }
 
+function change_password($current,$new){
+    const data = { 
+        action: "change_password",
+        current: $current ,
+        new : $new,
+        userId : window.localStorage.getItem('id')
+    };
+    fetch('http://localhost:80/users.php', {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) {
+            response.json().then(json =>{
+                displayError(json.message)
+            })
+            return;
+        }
+        response.json().then(json => {
+            let sucss  = document.getElementById('suc-lbl')
+            sucss.classList.remove('invisible')
+        })
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
+
+
+document.getElementById('update-btn').addEventListener('click',function(){
+    let passwordIn = document.getElementById('password-input');
+    let repPassword = document.getElementById('repeat-password-input')
+    change_password(passwordIn.value,repPassword.value)
+})
+
+function displayError(message){
+    let error  = document.getElementById('error-lbl')
+    error.innerHTML = message
+    error.classList.remove('invisible')
+}
+
+
+document.getElementById('password-input').addEventListener('input',function(){
+    document.getElementById('error-lbl').classList.add('invisible')
+    document.getElementById('suc-lbl').classList.add('invisible')
+})
+
+
+if(!isLogedIn()){
+    window.location.href = 'best_sellers.html?page=1'
+}
+
 fetch_username();
 fetch_order_history();

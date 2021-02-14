@@ -34,6 +34,21 @@
                 
             </div>
         </div>
+        <div class="navigation-fullscreen invisible" id="nav-full">
+            <a href="homepage.html">Home</a>
+            <a href="best_sellers.html?page=1" id="menu-item-best-seller">Best Sellers</a>
+            <a href="paintings.html?page=1" >Painting</a>
+            <a href="photography.html?page=1">Photography</a>
+            <div class="vertical-menu" id="logged-nav-menu">
+                <a href="./profile.html" id="profile-nav-item">Profile</a>
+                <a href="./favourite.html">Favourite</a>
+                <a href="" id="logout-btn-nav" style="color: red;">Log out</a>
+            </div>
+            <div class="vertical-menu" id="not-logged-nav-menu">
+                <a href="./login.html" class="btn-nav">Log in</a>
+                <a href="./register.html" class="btn-nav">Register</a>
+            </div>
+        </div>
         <div class="navigation">
             <div class="menu">
                 <a href="homepage.html">Home</a>
@@ -52,6 +67,8 @@
                     </div>
                     <label id="change-passord-lbl">Change Password</label>
                     <div id="password-box">
+                        <label class="invisible" id="error-lbl">Password is incorrect!!!</label>
+                        <label class="invisible" id="suc-lbl">Password Changed Succsessfuly!</label>
                         <input class="password-input" id="password-input" type="password" placeholder="Current Password">
                         <input class="password-input" id="repeat-password-input" type="password" placeholder="New Password">
                         <button id="update-btn">Update Password</button>
@@ -70,9 +87,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="navigation-fullscreen" id="nav-full">
-
         </div>
     </div>
     <script src="../js/main.js"></script>

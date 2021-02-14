@@ -1,3 +1,7 @@
 #menu-item-paintings{
     border-bottom: 2px solid black;
 }
+#menu-item-paintings-full{
+    background-color: steelblue;
+    color: whitesmoke;
+}
