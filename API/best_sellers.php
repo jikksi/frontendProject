@@ -8,7 +8,7 @@ $data = [
         "Artist" =>"Katsushika Hokusai",
         "Price" => 15,
         "Size" => "18 x 12",
-        "img" => "http://localhost:80/images/4.jpg"
+        "img" => "http://3.20.144.95/API/images/4.jpg"
     ],
     [
         "ID" => 5,
@@ -17,7 +17,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/5.jpg"
+        "img" => "http://3.20.144.95/API/images/5.jpg"
     ],
     [
         "ID" => 6,
@@ -26,7 +26,7 @@ $data = [
         "Artist" =>" Lucia Heffernan",
         "Price" => 30,
         "Size" => "18 x 24",
-        "img" => "http://localhost:80/images/6.jpg"
+        "img" => "http://3.20.144.95/API/images/6.jpg"
     ],
     [
         "ID" => 16,
@@ -35,7 +35,7 @@ $data = [
         "Artist" =>"Mark Gemmell",
         "Price" => 35,
         "Size" => "30 x 30",
-        "img" => "http://localhost:80/images/16.jpg"
+        "img" => "http://3.20.144.95/API/images/16.jpg"
     ],
     [
         "ID" => 20,
@@ -44,7 +44,7 @@ $data = [
         "Artist" =>"Jaynes Gallery",
         "Price" => 15,
         "Size" => "48 x 20",
-        "img" => "http://localhost:80/images/20.jpg"
+        "img" => "http://3.20.144.95/API/images/20.jpg"
     ],
 
     [
@@ -54,7 +54,7 @@ $data = [
         "Artist" =>"Isaac Sutton",
         "Price" => 15,
         "Size" => "20 x 30",
-        "img" => "http://localhost:80/images/21.jpg"
+        "img" => "http://3.20.144.95/API/images/21.jpg"
     ],
     [
         "ID" => 22,
@@ -63,7 +63,7 @@ $data = [
         "Artist" =>"Bjoern Alicke",
         "Price" => 12,
         "Size" => "48 x 36",
-        "img" => "http://localhost:80/images/22.jpg"
+        "img" => "http://3.20.144.95/API/images/22.jpg"
     ],
     [
         "ID" => 23,
@@ -72,7 +72,7 @@ $data = [
         "Artist" =>"Karine Aigner",
         "Price" => 30,
         "Size" => "30 x 36",
-        "img" => "http://localhost:80/images/23.jpg"
+        "img" => "http://3.20.144.95/API/images/23.jpg"
     ],
     [
         "ID" => 1,
@@ -81,7 +81,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/1.jpg"
+        "img" => "http://3.20.144.95/API/images/1.jpg"
     ],
     [
         "ID" => 2,
@@ -90,7 +90,7 @@ $data = [
         "Artist" =>"Vincent van Gogh",
         "Price" => 22,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/2.jpg"
+        "img" => "http://3.20.144.95/API/images/2.jpg"
     ],
     [
         "ID" => 3,
@@ -99,7 +99,7 @@ $data = [
         "Artist" =>"Brent Heighton",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/3.jpg"
+        "img" => "http://3.20.144.95/API/images/3.jpg"
     ],
     [
         "ID" => 4,
@@ -108,7 +108,7 @@ $data = [
         "Artist" =>"Katsushika Hokusai",
         "Price" => 15,
         "Size" => "18 x 12",
-        "img" => "http://localhost:80/images/4.jpg"
+        "img" => "http://3.20.144.95/API/images/4.jpg"
     ],
     [
         "ID" => 5,
@@ -117,7 +117,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/5.jpg"
+        "img" => "http://3.20.144.95/API/images/5.jpg"
     ],
     [
         "ID" => 6,
@@ -126,7 +126,7 @@ $data = [
         "Artist" =>" Lucia Heffernan",
         "Price" => 30,
         "Size" => "18 x 24",
-        "img" => "http://localhost:80/images/6.jpg"
+        "img" => "http://3.20.144.95/API/images/6.jpg"
     ],
     [
         "ID" => 16,
@@ -135,7 +135,7 @@ $data = [
         "Artist" =>"Mark Gemmell",
         "Price" => 35,
         "Size" => "30 x 30",
-        "img" => "http://localhost:80/images/16.jpg"
+        "img" => "http://3.20.144.95/API/images/16.jpg"
     ],
     [
         "ID" => 17,
@@ -144,7 +144,7 @@ $data = [
         "Artist" =>"Jon Bertelli",
         "Price" => 25,
         "Size" => "18 x 20",
-        "img" => "http://localhost:80/images/17.jpg"
+        "img" => "http://3.20.144.95/API/images/17.jpg"
     ],
     [
         "ID" => 18,
@@ -153,7 +153,7 @@ $data = [
         "Artist" =>"Ursula Abresch",
         "Price" => 18,
         "Size" => "18 x 18",
-        "img" => "http://localhost:80/images/18.jpg"
+        "img" => "http://3.20.144.95/API/images/18.jpg"
     ],
     [
         "ID" => 19,
@@ -162,7 +162,7 @@ $data = [
         "Artist" =>"Winfred Evers",
         "Price" => 15,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/19.jpg"
+        "img" => "http://3.20.144.95/API/images/19.jpg"
     ],
     [
         "ID" => 7,
@@ -171,7 +171,7 @@ $data = [
         "Artist" =>"Keith Haring",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/7.jpg"
+        "img" => "http://3.20.144.95/API/images/7.jpg"
     ],
     [
         "ID" => 8,
@@ -180,7 +180,7 @@ $data = [
         "Artist" =>"Jazzberry Blue",
         "Price" => 15,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/8.jpg"
+        "img" => "http://3.20.144.95/API/images/8.jpg"
     ],
     [
         "ID" => 9,
@@ -189,7 +189,7 @@ $data = [
         "Artist" =>"Leonid Afremov",
         "Price" => 15,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/9.jpg"
+        "img" => "http://3.20.144.95/API/images/9.jpg"
     ],
     [
         "ID" => 1,
@@ -198,7 +198,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/1.jpg"
+        "img" => "http://3.20.144.95/API/images/1.jpg"
     ],
     [
         "ID" => 16,
@@ -207,7 +207,7 @@ $data = [
         "Artist" =>"Mark Gemmell",
         "Price" => 35,
         "Size" => "30 x 30",
-        "img" => "http://localhost:80/images/16.jpg"
+        "img" => "http://3.20.144.95/API/images/16.jpg"
     ],
     [
         "ID" => 24,
@@ -216,7 +216,7 @@ $data = [
         "Artist" =>"Ursula Abresch",
         "Price" => 424,
         "Size" => "54 x 36",
-        "img" => "http://localhost:80/images/24.jpg"
+        "img" => "http://3.20.144.95/API/images/24.jpg"
     ],
     [
         "ID" => 25,
@@ -225,7 +225,7 @@ $data = [
         "Artist" =>" Philippe Sainte-Laudy",
         "Price" => 389,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/25.jpg"
+        "img" => "http://3.20.144.95/API/images/25.jpg"
     ],
     [
         "ID" => 26,
@@ -234,7 +234,7 @@ $data = [
         "Artist" =>" Brett Weston",
         "Price" => 400,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/26.jpg"
+        "img" => "http://3.20.144.95/API/images/26.jpg"
     ],
     [
         "ID" => 27,
@@ -243,7 +243,7 @@ $data = [
         "Artist" =>" Brett Weston",
         "Price" => 350,
         "Size" => "36 x 24",
-        "img" => "http://localhost:80/images/27.jpg"
+        "img" => "http://3.20.144.95/API/images/27.jpg"
     ],
     [
         "ID" => 28,
@@ -252,7 +252,7 @@ $data = [
         "Artist" =>"Philippe Saint-Laudy",
         "Price" => 550,
         "Size" => "40 x 24",
-        "img" => "http://localhost:80/images/28.jpg"
+        "img" => "http://3.20.144.95/API/images/28.jpg"
     ],
     [
         "ID" => 29,
@@ -261,7 +261,7 @@ $data = [
         "Artist" =>"Brett Weston",
         "Price" => 750,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/29.jpg"
+        "img" => "http://3.20.144.95/API/images/29.jpg"
     ],
     [
         "ID" => 30,
@@ -270,7 +270,7 @@ $data = [
         "Artist" =>"Brett Weston",
         "Price" => 1050,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/30.jpg"
+        "img" => "http://3.20.144.95/API/images/30.jpg"
     ],
     [
         "ID" => 17,
@@ -279,7 +279,7 @@ $data = [
         "Artist" =>"Jon Bertelli",
         "Price" => 25,
         "Size" => "18 x 20",
-        "img" => "http://localhost:80/images/17.jpg"
+        "img" => "http://3.20.144.95/API/images/17.jpg"
     ],
     [
         "ID" => 18,
@@ -288,7 +288,7 @@ $data = [
         "Artist" =>"Ursula Abresch",
         "Price" => 18,
         "Size" => "18 x 18",
-        "img" => "http://localhost:80/images/18.jpg"
+        "img" => "http://3.20.144.95/API/images/18.jpg"
     ],
     [
         "ID" => 19,
@@ -297,7 +297,7 @@ $data = [
         "Artist" =>"Winfred Evers",
         "Price" => 15,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/19.jpg"
+        "img" => "http://3.20.144.95/API/images/19.jpg"
     ],
     [
         "ID" => 2,
@@ -306,7 +306,7 @@ $data = [
         "Artist" =>"Vincent van Gogh",
         "Price" => 22,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/2.jpg"
+        "img" => "http://3.20.144.95/API/images/2.jpg"
     ],
     [
         "ID" => 3,
@@ -315,7 +315,7 @@ $data = [
         "Artist" =>"Brent Heighton",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/3.jpg"
+        "img" => "http://3.20.144.95/API/images/3.jpg"
     ],
     [
         "ID" => 4,
@@ -324,7 +324,7 @@ $data = [
         "Artist" =>"Katsushika Hokusai",
         "Price" => 15,
         "Size" => "18 x 12",
-        "img" => "http://localhost:80/images/4.jpg"
+        "img" => "http://3.20.144.95/API/images/4.jpg"
     ],
     [
         "ID" => 5,
@@ -333,7 +333,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/5.jpg"
+        "img" => "http://3.20.144.95/API/images/5.jpg"
     ],
     [
         "ID" => 6,
@@ -342,7 +342,7 @@ $data = [
         "Artist" =>" Lucia Heffernan",
         "Price" => 30,
         "Size" => "18 x 24",
-        "img" => "http://localhost:80/images/6.jpg"
+        "img" => "http://3.20.144.95/API/images/6.jpg"
     ],
     [
         "ID" => 7,
@@ -351,7 +351,7 @@ $data = [
         "Artist" =>"Keith Haring",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/7.jpg"
+        "img" => "http://3.20.144.95/API/images/7.jpg"
     ],
     [
         "ID" => 8,
@@ -360,7 +360,7 @@ $data = [
         "Artist" =>"Jazzberry Blue",
         "Price" => 15,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/8.jpg"
+        "img" => "http://3.20.144.95/API/images/8.jpg"
     ],
     [
         "ID" => 9,
@@ -369,7 +369,7 @@ $data = [
         "Artist" =>"Leonid Afremov",
         "Price" => 15,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/9.jpg"
+        "img" => "http://3.20.144.95/API/images/9.jpg"
     ],
     [
         "ID" => 1,
@@ -378,7 +378,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/1.jpg"
+        "img" => "http://3.20.144.95/API/images/1.jpg"
     ],
     [
         "ID" => 2,
@@ -387,7 +387,7 @@ $data = [
         "Artist" =>"Vincent van Gogh",
         "Price" => 22,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/2.jpg"
+        "img" => "http://3.20.144.95/API/images/2.jpg"
     ],
     [
         "ID" => 3,
@@ -396,7 +396,7 @@ $data = [
         "Artist" =>"Brent Heighton",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/3.jpg"
+        "img" => "http://3.20.144.95/API/images/3.jpg"
     ],
     [
         "ID" => 4,
@@ -405,7 +405,7 @@ $data = [
         "Artist" =>"Katsushika Hokusai",
         "Price" => 15,
         "Size" => "18 x 12",
-        "img" => "http://localhost:80/images/4.jpg"
+        "img" => "http://3.20.144.95/API/images/4.jpg"
     ],
     [
         "ID" => 5,
@@ -414,7 +414,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/5.jpg"
+        "img" => "http://3.20.144.95/API/images/5.jpg"
     ],
     [
         "ID" => 24,
@@ -423,7 +423,7 @@ $data = [
         "Artist" =>"Ursula Abresch",
         "Price" => 424,
         "Size" => "54 x 36",
-        "img" => "http://localhost:80/images/24.jpg"
+        "img" => "http://3.20.144.95/API/images/24.jpg"
     ],
     [
         "ID" => 25,
@@ -432,7 +432,7 @@ $data = [
         "Artist" =>" Philippe Sainte-Laudy",
         "Price" => 389,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/25.jpg"
+        "img" => "http://3.20.144.95/API/images/25.jpg"
     ],
     [
         "ID" => 26,
@@ -441,7 +441,7 @@ $data = [
         "Artist" =>" Brett Weston",
         "Price" => 400,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/26.jpg"
+        "img" => "http://3.20.144.95/API/images/26.jpg"
     ],
     [
         "ID" => 27,
@@ -450,7 +450,7 @@ $data = [
         "Artist" =>" Brett Weston",
         "Price" => 350,
         "Size" => "36 x 24",
-        "img" => "http://localhost:80/images/27.jpg"
+        "img" => "http://3.20.144.95/API/images/27.jpg"
     ],
     [
         "ID" => 28,
@@ -459,7 +459,7 @@ $data = [
         "Artist" =>"Philippe Saint-Laudy",
         "Price" => 550,
         "Size" => "40 x 24",
-        "img" => "http://localhost:80/images/28.jpg"
+        "img" => "http://3.20.144.95/API/images/28.jpg"
     ],
     [
         "ID" => 29,
@@ -468,7 +468,7 @@ $data = [
         "Artist" =>"Brett Weston",
         "Price" => 750,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/29.jpg"
+        "img" => "http://3.20.144.95/API/images/29.jpg"
     ],
     [
         "ID" => 30,
@@ -477,7 +477,7 @@ $data = [
         "Artist" =>"Brett Weston",
         "Price" => 1050,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/30.jpg"
+        "img" => "http://3.20.144.95/API/images/30.jpg"
     ],
     [
         "ID" => 6,
@@ -486,7 +486,7 @@ $data = [
         "Artist" =>" Lucia Heffernan",
         "Price" => 30,
         "Size" => "18 x 24",
-        "img" => "http://localhost:80/images/6.jpg"
+        "img" => "http://3.20.144.95/API/images/6.jpg"
     ],
     [
         "ID" => 7,
@@ -495,7 +495,7 @@ $data = [
         "Artist" =>"Keith Haring",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/7.jpg"
+        "img" => "http://3.20.144.95/API/images/7.jpg"
     ],
     [
         "ID" => 8,
@@ -504,7 +504,7 @@ $data = [
         "Artist" =>"Jazzberry Blue",
         "Price" => 15,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/8.jpg"
+        "img" => "http://3.20.144.95/API/images/8.jpg"
     ],
     [
         "ID" => 9,
@@ -513,7 +513,7 @@ $data = [
         "Artist" =>"Leonid Afremov",
         "Price" => 15,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/9.jpg"
+        "img" => "http://3.20.144.95/API/images/9.jpg"
     ],
     [
         "ID" => 1,
@@ -522,7 +522,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/1.jpg"
+        "img" => "http://3.20.144.95/API/images/1.jpg"
     ],
     [
         "ID" => 2,
@@ -531,7 +531,7 @@ $data = [
         "Artist" =>"Vincent van Gogh",
         "Price" => 22,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/2.jpg"
+        "img" => "http://3.20.144.95/API/images/2.jpg"
     ],
     [
         "ID" => 3,
@@ -540,7 +540,7 @@ $data = [
         "Artist" =>"Brent Heighton",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/3.jpg"
+        "img" => "http://3.20.144.95/API/images/3.jpg"
     ],
     [
         "ID" => 4,
@@ -549,7 +549,7 @@ $data = [
         "Artist" =>"Katsushika Hokusai",
         "Price" => 15,
         "Size" => "18 x 12",
-        "img" => "http://localhost:80/images/4.jpg"
+        "img" => "http://3.20.144.95/API/images/4.jpg"
     ],
     [
         "ID" => 5,
@@ -558,7 +558,7 @@ $data = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/5.jpg"
+        "img" => "http://3.20.144.95/API/images/5.jpg"
     ],
     [
         "ID" => 6,
@@ -567,7 +567,7 @@ $data = [
         "Artist" =>" Lucia Heffernan",
         "Price" => 30,
         "Size" => "18 x 24",
-        "img" => "http://localhost:80/images/6.jpg"
+        "img" => "http://3.20.144.95/API/images/6.jpg"
     ],
     [
         "ID" => 7,
@@ -576,7 +576,7 @@ $data = [
         "Artist" =>"Keith Haring",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/7.jpg"
+        "img" => "http://3.20.144.95/API/images/7.jpg"
     ],
     [
         "ID" => 8,
@@ -585,7 +585,7 @@ $data = [
         "Artist" =>"Jazzberry Blue",
         "Price" => 15,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/8.jpg"
+        "img" => "http://3.20.144.95/API/images/8.jpg"
     ],
     [
         "ID" => 9,
@@ -594,7 +594,7 @@ $data = [
         "Artist" =>"Leonid Afremov",
         "Price" => 15,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/9.jpg"
+        "img" => "http://3.20.144.95/API/images/9.jpg"
     ],
     [
         "ID" => 24,
@@ -603,7 +603,7 @@ $data = [
         "Artist" =>"Ursula Abresch",
         "Price" => 424,
         "Size" => "54 x 36",
-        "img" => "http://localhost:80/images/24.jpg"
+        "img" => "http://3.20.144.95/API/images/24.jpg"
     ],
     [
         "ID" => 25,
@@ -612,7 +612,7 @@ $data = [
         "Artist" =>" Philippe Sainte-Laudy",
         "Price" => 389,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/25.jpg"
+        "img" => "http://3.20.144.95/API/images/25.jpg"
     ],
     [
         "ID" => 26,
@@ -621,7 +621,7 @@ $data = [
         "Artist" =>" Brett Weston",
         "Price" => 400,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/26.jpg"
+        "img" => "http://3.20.144.95/API/images/26.jpg"
     ],
     [
         "ID" => 27,
@@ -630,7 +630,7 @@ $data = [
         "Artist" =>" Brett Weston",
         "Price" => 350,
         "Size" => "36 x 24",
-        "img" => "http://localhost:80/images/27.jpg"
+        "img" => "http://3.20.144.95/API/images/27.jpg"
     ],
     [
         "ID" => 28,
@@ -639,7 +639,7 @@ $data = [
         "Artist" =>"Philippe Saint-Laudy",
         "Price" => 550,
         "Size" => "40 x 24",
-        "img" => "http://localhost:80/images/28.jpg"
+        "img" => "http://3.20.144.95/API/images/28.jpg"
     ],
     [
         "ID" => 29,
@@ -648,7 +648,7 @@ $data = [
         "Artist" =>"Brett Weston",
         "Price" => 750,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/29.jpg"
+        "img" => "http://3.20.144.95/API/images/29.jpg"
     ],
     [
         "ID" => 30,
@@ -657,7 +657,7 @@ $data = [
         "Artist" =>"Brett Weston",
         "Price" => 1050,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/30.jpg"
+        "img" => "http://3.20.144.95/API/images/30.jpg"
     ],
     
 ];
@@ -671,7 +671,7 @@ $exclusives = [
         "Artist" =>"Ursula Abresch",
         "Price" => 424,
         "Size" => "54 x 36",
-        "img" => "http://localhost:80/images/24.jpg"
+        "img" => "http://3.20.144.95/API/images/24.jpg"
     ],
     [
         "ID" => 25,
@@ -680,7 +680,7 @@ $exclusives = [
         "Artist" =>" Philippe Sainte-Laudy",
         "Price" => 389,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/25.jpg"
+        "img" => "http://3.20.144.95/API/images/25.jpg"
     ],
     [
         "ID" => 26,
@@ -689,7 +689,7 @@ $exclusives = [
         "Artist" =>" Brett Weston",
         "Price" => 400,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/26.jpg"
+        "img" => "http://3.20.144.95/API/images/26.jpg"
     ],
     [
         "ID" => 27,
@@ -698,7 +698,7 @@ $exclusives = [
         "Artist" =>" Brett Weston",
         "Price" => 350,
         "Size" => "36 x 24",
-        "img" => "http://localhost:80/images/27.jpg"
+        "img" => "http://3.20.144.95/API/images/27.jpg"
     ],
     [
         "ID" => 28,
@@ -707,7 +707,7 @@ $exclusives = [
         "Artist" =>"Philippe Saint-Laudy",
         "Price" => 550,
         "Size" => "40 x 24",
-        "img" => "http://localhost:80/images/28.jpg"
+        "img" => "http://3.20.144.95/API/images/28.jpg"
     ],
     [
         "ID" => 29,
@@ -716,7 +716,7 @@ $exclusives = [
         "Artist" =>"Brett Weston",
         "Price" => 750,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/29.jpg"
+        "img" => "http://3.20.144.95/API/images/29.jpg"
     ],
     [
         "ID" => 30,
@@ -725,7 +725,7 @@ $exclusives = [
         "Artist" =>"Brett Weston",
         "Price" => 1050,
         "Size" => "70 x 150",
-        "img" => "http://localhost:80/images/30.jpg"
+        "img" => "http://3.20.144.95/API/images/30.jpg"
     ],
     [
         "ID" => 10,
@@ -734,7 +734,7 @@ $exclusives = [
         "Artist" =>"Jane Burton",
         "Price" => 18,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/10.jpg"
+        "img" => "http://3.20.144.95/API/images/10.jpg"
     ],
     [
         "ID" => 11,
@@ -743,7 +743,7 @@ $exclusives = [
         "Artist" =>"Ursula Abresch",
         "Price" => 42,
         "Size" => "12 x 9",
-        "img" => "http://localhost:80/images/11.jpg"
+        "img" => "http://3.20.144.95/API/images/11.jpg"
     ],
     [
         "ID" => 12,
@@ -752,7 +752,7 @@ $exclusives = [
         "Artist" =>"Unknown",
         "Price" => 23,
         "Size" => "9 x 12",
-        "img" => "http://localhost:80/images/12.jpg"
+        "img" => "http://3.20.144.95/API/images/12.jpg"
     ],
     [
         "ID" => 24,
@@ -761,7 +761,7 @@ $exclusives = [
         "Artist" =>"Ursula Abresch",
         "Price" => 424,
         "Size" => "54 x 36",
-        "img" => "http://localhost:80/images/24.jpg"
+        "img" => "http://3.20.144.95/API/images/24.jpg"
     ],
     [
         "ID" => 25,
@@ -770,7 +770,7 @@ $exclusives = [
         "Artist" =>" Philippe Sainte-Laudy",
         "Price" => 389,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/25.jpg"
+        "img" => "http://3.20.144.95/API/images/25.jpg"
     ],
     [
         "ID" => 26,
@@ -779,7 +779,7 @@ $exclusives = [
         "Artist" =>" Brett Weston",
         "Price" => 400,
         "Size" => "36 x 54",
-        "img" => "http://localhost:80/images/26.jpg"
+        "img" => "http://3.20.144.95/API/images/26.jpg"
     ],
     [
         "ID" => 10,
@@ -788,7 +788,7 @@ $exclusives = [
         "Artist" =>"Jane Burton",
         "Price" => 18,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/10.jpg"
+        "img" => "http://3.20.144.95/API/images/10.jpg"
     ],
     [
         "ID" => 11,
@@ -797,7 +797,7 @@ $exclusives = [
         "Artist" =>"Ursula Abresch",
         "Price" => 42,
         "Size" => "12 x 9",
-        "img" => "http://localhost:80/images/11.jpg"
+        "img" => "http://3.20.144.95/API/images/11.jpg"
     ],
     [
         "ID" => 12,
@@ -806,7 +806,7 @@ $exclusives = [
         "Artist" =>"Unknown",
         "Price" => 23,
         "Size" => "9 x 12",
-        "img" => "http://localhost:80/images/12.jpg"
+        "img" => "http://3.20.144.95/API/images/12.jpg"
     ],
     [
         "ID" => 20,
@@ -815,7 +815,7 @@ $exclusives = [
         "Artist" =>"Jaynes Gallery",
         "Price" => 15,
         "Size" => "48 x 20",
-        "img" => "http://localhost:80/images/20.jpg"
+        "img" => "http://3.20.144.95/API/images/20.jpg"
     ],
 
     [
@@ -825,7 +825,7 @@ $exclusives = [
         "Artist" =>"Isaac Sutton",
         "Price" => 15,
         "Size" => "20 x 30",
-        "img" => "http://localhost:80/images/21.jpg"
+        "img" => "http://3.20.144.95/API/images/21.jpg"
     ],
     [
         "ID" => 22,
@@ -834,7 +834,7 @@ $exclusives = [
         "Artist" =>"Bjoern Alicke",
         "Price" => 12,
         "Size" => "48 x 36",
-        "img" => "http://localhost:80/images/22.jpg"
+        "img" => "http://3.20.144.95/API/images/22.jpg"
     ],
     [
         "ID" => 23,
@@ -843,7 +843,7 @@ $exclusives = [
         "Artist" =>"Karine Aigner",
         "Price" => 30,
         "Size" => "30 x 36",
-        "img" => "http://localhost:80/images/23.jpg"
+        "img" => "http://3.20.144.95/API/images/23.jpg"
     ],
     [
         "ID" => 1,
@@ -852,7 +852,7 @@ $exclusives = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/1.jpg"
+        "img" => "http://3.20.144.95/API/images/1.jpg"
     ],
     [
         "ID" => 2,
@@ -861,7 +861,7 @@ $exclusives = [
         "Artist" =>"Vincent van Gogh",
         "Price" => 22,
         "Size" => "16 x 16",
-        "img" => "http://localhost:80/images/2.jpg"
+        "img" => "http://3.20.144.95/API/images/2.jpg"
     ],
     [
         "ID" => 3,
@@ -870,7 +870,7 @@ $exclusives = [
         "Artist" =>"Brent Heighton",
         "Price" => 15,
         "Size" => "16 x 12",
-        "img" => "http://localhost:80/images/3.jpg"
+        "img" => "http://3.20.144.95/API/images/3.jpg"
     ],
     [
         "ID" => 4,
@@ -879,7 +879,7 @@ $exclusives = [
         "Artist" =>"Katsushika Hokusai",
         "Price" => 15,
         "Size" => "18 x 12",
-        "img" => "http://localhost:80/images/4.jpg"
+        "img" => "http://3.20.144.95/API/images/4.jpg"
     ],
     [
         "ID" => 5,
@@ -888,7 +888,7 @@ $exclusives = [
         "Artist" =>"Jean-Michel Basquiat",
         "Price" => 18,
         "Size" => "12 x 12",
-        "img" => "http://localhost:80/images/5.jpg"
+        "img" => "http://3.20.144.95/API/images/5.jpg"
     ],
     [
         "ID" => 6,
@@ -897,7 +897,7 @@ $exclusives = [
         "Artist" =>" Lucia Heffernan",
         "Price" => 30,
         "Size" => "18 x 24",
-        "img" => "http://localhost:80/images/6.jpg"
+        "img" => "http://3.20.144.95/API/images/6.jpg"
     ],
     [
         "ID" => 16,
@@ -906,7 +906,7 @@ $exclusives = [
         "Artist" =>"Mark Gemmell",
         "Price" => 35,
         "Size" => "30 x 30",
-        "img" => "http://localhost:80/images/16.jpg"
+        "img" => "http://3.20.144.95/API/images/16.jpg"
     ],
 ];
 

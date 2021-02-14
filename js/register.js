@@ -34,7 +34,7 @@ function tryregister(){
         password : password
     };
 
-    fetch('http://localhost:80/users.php', {
+    fetch('http://3.20.144.95/API/users.php', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',

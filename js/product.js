@@ -12,7 +12,7 @@ if(id!=null){
 
 function fetch_image(id){
     console.log(id)
-    fetch('http://localhost:80/images.php?id='+id)
+    fetch('http://3.20.144.95/API/images.php?id='+id)
     .then(response => {
         if (!response.ok) {
             response.json().then(json =>{
@@ -50,7 +50,7 @@ like_btn.addEventListener('click',function(){
         userId : window.localStorage.getItem('id')
     };
 
-    fetch('http://localhost:80/users.php', {
+    fetch('http://3.20.144.95/API/users.php', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ buy_btn.addEventListener('click',function(){
         imgId : id,
         userId : window.localStorage.getItem('id')
     };
-    fetch('http://localhost:80/users.php', {
+    fetch('http://3.20.144.95/API/users.php', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ buy_btn.addEventListener('click',function(){
 
 function isFavorite(){
     console.log('isFavorite')
-    fetch('http://localhost:80/users.php?imgId='+id+"&userId="+window.localStorage.getItem('id')+'&action=is_favorite')
+    fetch('http://3.20.144.95/API/users.php?imgId='+id+"&userId="+window.localStorage.getItem('id')+'&action=is_favorite')
     .then(response => {
         if (!response.ok) {
             response.json().then(json =>{

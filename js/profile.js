@@ -1,5 +1,5 @@
 function fetch_username(){
-    fetch('http://localhost:80/users.php?userId='+window.localStorage.getItem('id')+'&action=get_username')
+    fetch('http://3.20.144.95/API/users.php?userId='+window.localStorage.getItem('id')+'&action=get_username')
     .then(response => {
         if (!response.ok) {
             response.json().then(json =>{
@@ -20,7 +20,7 @@ function fetch_username(){
 
 
 function fetch_order_history(){
-    fetch('http://localhost:80/users.php?userId='+window.localStorage.getItem('id')+'&action=get_history')
+    fetch('http://3.20.144.95/API/users.php?userId='+window.localStorage.getItem('id')+'&action=get_history')
     .then(response => {
         if (!response.ok) {
             response.json().then(json =>{
@@ -70,7 +70,7 @@ function change_password($current,$new){
         new : $new,
         userId : window.localStorage.getItem('id')
     };
-    fetch('http://localhost:80/users.php', {
+    fetch('http://3.20.144.95/API/users.php', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json',

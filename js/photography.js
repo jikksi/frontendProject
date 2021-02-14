@@ -9,7 +9,7 @@ function onload(){
 function fetch_data(){
     var urlParams = new URLSearchParams(window.location.search);
     var keys = urlParams.keys();
-    const target = new URL("http://localhost:80/photography.php");
+    const target = new URL("http://3.20.144.95/API/photography.php");
     const params = new URLSearchParams();
     for(key of keys) { 
         params.set(key, urlParams.get(key));
