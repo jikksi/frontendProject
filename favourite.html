@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/favourite.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <button class="icon-btn" id="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <img id="logo" src="../logo.svg" alt="logo" >
+            <img id="logo" src="./logo.svg" alt="logo" >
             <div class="header-right">
-                <button class="icon-btn" id="heart-btn"><img id="heart-icon" src="../heart.svg" alt="heart"></button>
+                <button class="icon-btn" id="heart-btn"><img id="heart-icon" src="./heart.svg" alt="heart"></button>
                 <div class="my-profile" id="my-profile">
-                    <button class="icon-btn" id="user-btn"><img id="user-icon" src="../user.svg" alt="user"></button>
+                    <button class="icon-btn" id="user-btn"><img id="user-icon" src="./user.svg" alt="user"></button>
                     <div class="info-bar">
                         <div id="info-bar-menu-not-logged" class="info-bar-menu">
                             <ul>
@@ -27,7 +27,7 @@
                         <div id="info-bar-menu-logged" class="info-bar-menu">
                             <ul>
                                 <li><a href="./profile.html">Profile</a></li>
-                                <li><a href="./favourite.html">Favourite</a></li>
+                                <li><a href="./favourite.html">Favorite</a></li>
                                 <li><a href="" id="logout-btn" style="color: red;">Log out</a></li>
                             </ul>
                         </div>
@@ -38,13 +38,13 @@
             </div>
         </div>
         <div class="navigation-fullscreen invisible" id="nav-full">
-            <a href="index.html" id="menu-item-homepage-full">Home</a>
+            <a href="index.html" id="menu-item-homepage">Home</a>
             <a href="best_sellers.html?page=1">Best Sellers</a>
             <a href="paintings.html?page=1">Painting</a>
             <a href="photography.html?page=1">Photography</a>
             <div class="vertical-menu" id="logged-nav-menu">
                 <a href="./profile.html">Profile</a>
-                <a href="./favourite.html">Favourite</a>
+                <a href="./favourite.html" id="nav-favorite-item">Favourite</a>
                 <a href="" id="logout-btn-nav" style="color: red;">Log out</a>
             </div>
             <div class="vertical-menu" id="not-logged-nav-menu">
@@ -61,16 +61,23 @@
             </div>
         </div>
         <div class="content">
-            <div id = "cover">
-                <img src="../API/homepage-cover2.jpg" alt="cover" id="cover-img">
+            <label id="favorite-lbl">Favorite</label>
+            <div id="empty-box" class="invisible">
+                <label id="missing-label">Looks like you don’t have anything in your favorites yet.</label>
+                <div>
+                    <img id="empty-box-img" src="./box.svg" alt="">
+                </div>
+                <a id="btn-art" href="./best_sellers.html?page=1">ArtLove</a>
+            </div>
+
+            <div class="grid-container" id="grid">
+
             </div>
         </div>
-        
-        
-           
-            
+
         </div>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/favorite.js"></script>
 </body>
 </html>

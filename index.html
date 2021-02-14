@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/paintings.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/homepage.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <button class="icon-btn" id="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <img id="logo" src="../logo.svg" alt="logo" >
+            <img id="logo" src="./logo.svg" alt="logo" >
             <div class="header-right">
-                <button class="icon-btn" id="heart-btn"><img id="heart-icon" src="../heart.svg" alt="heart"></button>
+                <button class="icon-btn" id="heart-btn"><img id="heart-icon" src="./heart.svg" alt="heart"></button>
                 <div class="my-profile" id="my-profile">
-                    <button class="icon-btn" id="user-btn"><img id="user-icon" src="../user.svg" alt="user"></button>
+                    <button class="icon-btn" id="user-btn"><img id="user-icon" src="./user.svg" alt="user"></button>
                     <div class="info-bar">
                         <div id="info-bar-menu-not-logged" class="info-bar-menu">
                             <ul>
@@ -38,9 +38,9 @@
             </div>
         </div>
         <div class="navigation-fullscreen invisible" id="nav-full">
-            <a href="index.html">Home</a>
-            <a href="best_sellers.html?page=1" >Best Sellers</a>
-            <a href="paintings.html?page=1" id="menu-item-paintings-full">Painting</a>
+            <a href="index.html" id="menu-item-homepage-full">Home</a>
+            <a href="best_sellers.html?page=1">Best Sellers</a>
+            <a href="paintings.html?page=1">Painting</a>
             <a href="photography.html?page=1">Photography</a>
             <div class="vertical-menu" id="logged-nav-menu">
                 <a href="./profile.html">Profile</a>
@@ -54,43 +54,23 @@
         </div>
         <div class="navigation">
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="best_sellers.html?page=1" >Best Sellers</a>
-                <a href="paintings.html?page=1" id="menu-item-paintings">Painting</a>
+                <a href="index.html" id="menu-item-homepage">Home</a>
+                <a href="best_sellers.html?page=1">Best Sellers</a>
+                <a href="paintings.html?page=1">Painting</a>
                 <a href="photography.html?page=1">Photography</a>
             </div>
         </div>
         <div class="content">
-            <div class="filter">
-                <div class="filter-by">
-                    <button class="filter-by-item filter-by-item-selected" id="filter-all-item">All items</button>
-                    <button class="filter-by-item" id="filter-exclusive">Exclusives</button>
-                </div>
-                <div class="sort-by">
-                    <select class="sort-by-item" id="sort-select">
-                        Sort by: 
-                        <option value="new">Newest</option>
-                        <option value="popular">Most Popular</option>
-                        <option value="ltoh">Price(Low to High)</option>
-                        <option value="htol">Price(High to low)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="grid-container" id="grid">
-                
-            </div>
-            <div class="pagination">
-                <div class="pagination-menu" id="pagination-menu">
-
-                    
-                </div>
+            <div id = "cover">
+                <img src="./API/homepage-cover2.jpg" alt="cover" id="cover-img">
             </div>
         </div>
+        
+        
+           
+            
+        </div>
     </div>
-    <script src="../js/main.js"></script>
-    <script src="../js/paintings.js"></script>
-    <script src="../js/grid.js"></script>
-    <script src="../js/pagination.js"></script>
-    <script src="../js/filter.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
