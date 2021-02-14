@@ -99,7 +99,7 @@ buy_btn.addEventListener('click',function(){
             return;
         }
         response.json().then(json => {
-           console.log(json);
+          document.getElementById('suc-lbl').classList.remove('invisible');
         })
     })
     .catch((error) => {

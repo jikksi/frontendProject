@@ -108,11 +108,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if($action == 'change_password'){
+        
         $currentPassword = $obj->current;
         $new = $obj->new;
         $user_id = $obj->userId;
-        if($users[$user_id]['password'] == $currentPassword){
-            $users[$user_id]['password'] = $new;
+        $user = get_user_by_id($user_id);
+        if($user['password'] == $currentPassword){
+            change_password_of_user($user_id,$new);
             file_put_contents('users_base.txt', serialize($users));
             respond([
                 "message" => "Password Changed Succsessfuly!"
@@ -144,9 +146,15 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
 
     if($action == 'get_favorites'){
         $user_id = $_GET['userId'];
-        respond([
-            "data" =>get_favorite_images($favorites[$user_id])
-        ],200);
+        if(array_key_exists($user_id,$favorites)){
+            respond([
+                "data" =>get_favorite_images($favorites[$user_id])
+            ],200);
+        }else{
+            respond([
+                "data" =>[]
+            ],200);
+        }
     }
 
 
@@ -154,18 +162,50 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
     if($action == 'get_username'){
         $user_id = $_GET['userId'];
         respond([
-            'username' => get_user($user_id)
+            'username' => get_username($user_id)
         ],200);
     }
 
 
     if($action == 'get_history'){
         $user_id = $_GET['userId'];
-        $result = get_history($order_history[$user_id]);
+        if(array_key_exists($user_id,$order_history)){
+            $result = get_history($order_history[$user_id]);
+            respond([
+                "data" => $result
+            ],200);
+        }
         respond([
-            "data" => $result
+            "data" => []
         ],200);
+        
     }
+}
+
+
+function change_password_of_user($id,$newPassword){
+    global $users;
+    $i = 0;
+    foreach($users as $user){
+        $i++;
+        if($user['id']==$id){
+            var_dump($user);
+            unset($users[$i]);
+            $user['password'] = $newPassword;
+            array_push($users,$user);
+        }
+    }
+    var_dump($users);
+}
+
+function get_user_by_id($id){
+    global $users;
+    foreach($users as $user){
+        if($user['id']==$id){
+            return $user;
+        }
+    }
+    return null;
 }
 
 
@@ -179,7 +219,7 @@ function get_history($array){
     }
     return $result;
 }
-function get_user($id){
+function get_username($id){
     global $users;
     foreach($users as $user){
         if($user['id']==$id){

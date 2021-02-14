@@ -9,7 +9,7 @@ let isLogedIn = function(){
 
 window.addEventListener('DOMContentLoaded', function(){
     if(isLogedIn()){
-        window.location.href = 'homepage.html';
+        window.location.href = 'index.html';
     }
 });
 
@@ -58,8 +58,9 @@ function tryregister(){
 
 }
 
-function register(data){
-    console.log(data.id)
+function register(id){
+    window.localStorage.setItem('id',id)
+    window.location.href = 'best_sellers.html?page=1'
 }
 
 

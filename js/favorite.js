@@ -1,6 +1,11 @@
 let favorites;
 let userId = window.localStorage.getItem('id')
 let empty_box = document.getElementById('empty-box')
+
+
+if(!isLogedIn()){
+    window.location.href = 'best_sellers.html?page=1'
+}
 function fetch_favorites(){
     fetch('http://3.20.144.95/API/users.php?userId='+window.localStorage.getItem('id')+'&action=get_favorites')
     .then(response => {

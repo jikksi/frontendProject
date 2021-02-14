@@ -9,7 +9,7 @@ let isLogedIn = function(){
 
 window.addEventListener('DOMContentLoaded', function(){
     if(isLogedIn()){
-        window.location.href = 'homepage.html';
+        window.location.href = 'index.html';
     }
 });
 
@@ -73,5 +73,5 @@ function removeError(){
 
 function login(id){
     window.localStorage.setItem('id',id)
-    window.location.href = 'homepage.html';
+    window.location.href = 'index.html';
 }
