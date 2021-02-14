@@ -39,7 +39,7 @@ function draw(data){
     document.getElementById('price-label').innerHTML = data.Price + '$'
 }
 
-like_btn.addEventListener('click',function(){
+like_btn.addEventListener('mousedown',function(){
     console.log({
         imgId : id,
         userId : window.localStorage.getItem('id')
@@ -67,8 +67,10 @@ like_btn.addEventListener('click',function(){
         response.json().then(json => {
             console.log(json)
             if(json.added){
+                console.log('yes')
                 like_btn.classList.add('selected');
             }else{
+                console.log('no')
                 like_btn.classList.remove('selected');
             }
         })

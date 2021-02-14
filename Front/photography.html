@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/best_seller.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/photography.css">
+    <title>Photography</title>
 </head>
 <body>
     <div class="container">
@@ -18,28 +18,31 @@
                 <button class="icon-btn" id="heart-btn"><img id="heart-icon" src="./heart.svg" alt="heart"></button>
                 <div class="my-profile" id="my-profile">
                     <button class="icon-btn" id="user-btn"><img id="user-icon" src="./user.svg" alt="user"></button>
-                    <div id="info-bar-menu-not-logged" class="info-bar-menu">
-                        <ul>
-                            <li><a href="./login.html">Log in</a></li>
-                            <li><a href="./register.html">Register</a></li>
-                        </ul>
-                    </div>
-                    <div id="info-bar-menu-logged" class="info-bar-menu">
-                        <ul>
-                            <li><a href="./profile.html">Profile</a></li>
-                            <li><a href="./favourite.html">Favourite</a></li>
-                            <li><a href="" id="logout-btn" style="color: red;">Log out</a></li>
-                        </ul>
+                    <div class="info-bar">
+                        <div id="info-bar-menu-not-logged" class="info-bar-menu">
+                            <ul>
+                                <li><a href="./login.html">Log in</a></li>
+                                <li><a href="./register.html">Register</a></li>
+                            </ul>
+                        </div>
+                        <div id="info-bar-menu-logged" class="info-bar-menu">
+                            <ul>
+                                <li><a href="./profile.html">Profile</a></li>
+                                <li><a href="./favourite.html">Favourite</a></li>
+                                <li><a href="" id="logout-btn" style="color: red;">Log out</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
+                
             </div>
         </div>
         <div class="navigation-fullscreen invisible" id="nav-full">
             <a href="index.html">Home</a>
-            <a href="best_sellers.html?page=1" id="menu-item-best-seller-full">Best Sellers</a>
+            <a href="best_sellers.html?page=1" >Best Sellers</a>
             <a href="paintings.html?page=1" >Painting</a>
-            <a href="photography.html?page=1">Photography</a>
-
+            <a href="photography.html?page=1" id="menu-item-phtography-full">Photography</a>
             <div class="vertical-menu" id="logged-nav-menu">
                 <a href="./profile.html">Profile</a>
                 <a href="./favourite.html">Favourite</a>
@@ -53,9 +56,9 @@
         <div class="navigation">
             <div class="menu">
                 <a href="index.html">Home</a>
-                <a href="best_sellers.html?page=1" id="menu-item-best-seller">Best Sellers</a>
+                <a href="best_sellers.html?page=1" >Best Sellers</a>
                 <a href="paintings.html?page=1" >Painting</a>
-                <a href="photography.html?page=1">Photography</a>
+                <a href="photography.html?page=1" id="menu-item-photography">Photography</a>
             </div>
         </div>
         <div class="content">
@@ -79,16 +82,15 @@
             </div>
             <div class="pagination">
                 <div class="pagination-menu" id="pagination-menu">
+
                     
                 </div>
             </div>
         </div>
-
-        
     </div>
     <script src="./js/main.js"></script>
-    <script src="./js/best_sellers.js"></script>
     <script src="./js/grid.js"></script>
+    <script src="./js/photography.js"></script>
     <script src="./js/pagination.js"></script>
     <script src="./js/filter.js"></script>
 </body>

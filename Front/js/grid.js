@@ -39,11 +39,11 @@ function draw_item(data){
 }
 
 
-function change_grid_style(){
+function change_grid_style(data){
     let grid = document.getElementById('grid');
     var w = window.innerWidth;
     if(w < 450){
-        grid.style.gridTemplateRows = 'repeat(' + data.length + ', 500px)';
+        grid.style.gridTemplateRows = 'repeat('+ data.length +',300px)';
     }else if(450 < w  && w < 650){
         grid.style.gridTemplateRows = 'repeat(' + (data.length / 2) + ', 350px)';
     }else if(650 < w && w < 950){

@@ -4,7 +4,7 @@ let empty_box = document.getElementById('empty-box')
 
 
 if(!isLogedIn()){
-    window.location.href = 'best_sellers.html?page=1'
+    window.location.href = 'login.html'
 }
 function fetch_favorites(){
     fetch('http://3.20.144.95/API/users.php?userId='+window.localStorage.getItem('id')+'&action=get_favorites')
@@ -21,6 +21,7 @@ function fetch_favorites(){
                empty_box.classList.remove('invisible')
            }else{
                draw_favorites(data)
+               change_grid_style(data)
            }
         })
     })
@@ -80,19 +81,17 @@ function draw_item(data){
 
 
 
-// function change_grid_style(){
-//     let grid = document.getElementById('grid');
-//     var w = window.innerWidth;
+function change_grid_style(){
+    let grid = document.getElementById('grid');
+    var w = window.innerWidth;
 
-//     if(w < 450){
-//         grid.style.gridTemplateRows = 'repeat(' + data.length + ', 500px)';
-//     }else if(450 < w  && w < 650){
-//         grid.style.gridTemplateRows = 'repeat(' + (data.length / 2) + ', 350px)';
-//     }else if(650 < w && w < 950){
-//         grid.style.gridTemplateRows = 'repeat(' + Math.round(data.length / 3) + ', 400px)';
-//     }else{
-//         grid.style.gridTemplateRows = 'repeat(' + (data.length / 4) + ', 400px)';
-//     }
-// }
-
-// change_grid_style();
+    if(w < 450){
+        grid.style.gridTemplateRows = 'repeat(' + data.length + ', 300px)';
+    }else if(450 < w  && w < 650){
+        grid.style.gridTemplateRows = 'repeat(' + (data.length / 2) + ', 350px)';
+    }else if(650 < w && w < 950){
+        grid.style.gridTemplateRows = 'repeat(' + Math.round(data.length / 3) + ', 400px)';
+    }else{
+        grid.style.gridTemplateRows = 'repeat(' + (data.length / 4) + ', 400px)';
+    }
+}

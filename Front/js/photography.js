@@ -1,14 +1,15 @@
 
 window.addEventListener('DOMContentLoaded', (event) => onload());
 var data;
-
 function onload(){
+    console.log('loaded')
     fetch_data()
 }
-function fetch_data(url){
+
+function fetch_data(){
     var urlParams = new URLSearchParams(window.location.search);
     var keys = urlParams.keys();
-    const target = new URL("http://3.20.144.95/API/painting.php");
+    const target = new URL("http://3.20.144.95/API/photography.php");
     const params = new URLSearchParams();
     for(key of keys) { 
         params.set(key, urlParams.get(key));
@@ -21,7 +22,7 @@ function fetch_data(url){
             var obj = JSON.parse(xhttp.responseText);
             data = obj
             draw_items()
-            change_grid_style()
+            change_grid_style(data.data)
         }
     };
     xhttp.open("GET", target, true);
@@ -29,8 +30,8 @@ function fetch_data(url){
 }
 
 function draw_items(){
-    console.log(data)
     let array = data.data
+    console.log(array)
     let grid = document.getElementById('grid');
     for ( i=0; i < array.length; i++) {
         draw_item(array[i])
@@ -38,5 +39,5 @@ function draw_items(){
     draw_pagination();
 }
 window.onresize = function(event) {
-    change_grid_style();
+    change_grid_style(data);
 };

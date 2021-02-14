@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/best_seller.css">
+    <title>Best Sellers</title>
 </head>
 <body>
     <div class="container">
@@ -21,7 +21,7 @@
                     <div id="info-bar-menu-not-logged" class="info-bar-menu">
                         <ul>
                             <li><a href="./login.html">Log in</a></li>
-                            <li><a href="">Register</a></li>
+                            <li><a href="./register.html">Register</a></li>
                         </ul>
                     </div>
                     <div id="info-bar-menu-logged" class="info-bar-menu">
@@ -32,14 +32,14 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div class="navigation-fullscreen invisible" id="nav-full">
             <a href="index.html">Home</a>
-            <a href="best_sellers.html?page=1" id="menu-item-best-seller">Best Sellers</a>
+            <a href="best_sellers.html?page=1" id="menu-item-best-seller-full">Best Sellers</a>
             <a href="paintings.html?page=1" >Painting</a>
             <a href="photography.html?page=1">Photography</a>
+
             <div class="vertical-menu" id="logged-nav-menu">
                 <a href="./profile.html">Profile</a>
                 <a href="./favourite.html">Favourite</a>
@@ -59,32 +59,37 @@
             </div>
         </div>
         <div class="content">
-            <div id="product-box">
-                
-                <div id="product-box-left-side">
-                    <div id="product-img-box">
-                        <div id="icon-box">
-                            <button class="icon-btn" id="heart-btn-products"><img id="heart-icon" src="./heart.svg" alt="heart"></button>
-                        </div>
-                        <img src="http://3.20.144.95/API/images/4.jpg" alt="image" id="product-img">
-                    </div>
-                    <label id="type-label" >The Print</label>
-                    
+            <div class="filter">
+                <div class="filter-by">
+                    <button class="filter-by-item filter-by-item-selected" id="filter-all-item">All items</button>
+                    <button class="filter-by-item" id="filter-exclusive">Exclusives</button>
                 </div>
-                <div id="product-box-right-side">
-                    <div id="product-info-bar">
-                        <label id="title-label">unknown</label>
-                        <label id="artist-label">unknown</label>
-                        <label id="price-label">unknown</label>
-                        
-                    </div>
-                    <button id="buy-btn">BUY</button>
-                    <label class="invisible" id="suc-lbl">Congratulations you have successfully bought item!</label>
+                <div class="sort-by">
+                    <select class="sort-by-item" id="sort-select">
+                        Sort by: 
+                        <option value="new">Newest</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="ltoh">Price(Low to High)</option>
+                        <option value="htol">Price(High to low)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid-container" id="grid">
+                
+            </div>
+            <div class="pagination">
+                <div class="pagination-menu" id="pagination-menu">
+                    
                 </div>
             </div>
         </div>
+
+        
     </div>
     <script src="./js/main.js"></script>
-    <script src="./js/product.js"></script>
+    <script src="./js/grid.js"></script>
+    <script src="./js/pagination.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/best_sellers.js"></script>
 </body>
 </html>

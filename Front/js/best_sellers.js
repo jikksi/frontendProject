@@ -21,7 +21,7 @@ function fetch_data(url){
             var obj = JSON.parse(xhttp.responseText);
             data = obj
             draw_items()
-            change_grid_style()
+            change_grid_style(data.data)
         }
     };
     xhttp.open("GET", target, true);
@@ -37,21 +37,7 @@ function draw_items(){
     }
     draw_pagination();
 }
-{/* <div class="pagination-menu">
-
-    <a class="pagination-menu-item" href="">1</a>
-    <a class="pagination-menu-item" href="">1</a>
-    <a class="pagination-menu-item" href="">1</a>
-    <a class="pagination-menu-item" href="">1</a>
-    <a class="pagination-menu-item" href="">1</a>
-    <a class="pagination-menu-item" href="">1</a>
-    <a class="pagination-menu-item" href="">1</a>
-
-</div> */}
-
-
-
 
 window.onresize = function(event) {
-    change_grid_style();
+    change_grid_style(data);
 };

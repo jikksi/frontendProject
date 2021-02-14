@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/profile.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/product.css">
+    <title>Product</title>
 </head>
 <body>
     <div class="container">
@@ -41,7 +41,7 @@
             <a href="paintings.html?page=1" >Painting</a>
             <a href="photography.html?page=1">Photography</a>
             <div class="vertical-menu" id="logged-nav-menu">
-                <a href="./profile.html" id="profile-nav-item">Profile</a>
+                <a href="./profile.html">Profile</a>
                 <a href="./favourite.html">Favourite</a>
                 <a href="" id="logout-btn-nav" style="color: red;">Log out</a>
             </div>
@@ -58,39 +58,33 @@
                 <a href="photography.html?page=1">Photography</a>
             </div>
         </div>
-        <div class="profile-container">
-            <div id="profile-box">
-                <div id="account-box">
-                    <label id="account-lbl">Account Settings</label>
-                    <div id="username-box">
-                        <label >Username : </label>
-                        <label id="username-lbl">Giorgi jikia</label>
+        <div class="content">
+            <div id="product-box">
+                
+                <div id="product-box-left-side">
+                    <div id="product-img-box">
+                        <div id="icon-box">
+                            <button class="icon-btn" id="heart-btn-products"><img id="heart-icon" src="./heart.svg" alt="heart"></button>
+                        </div>
+                        <img src="" alt="image" id="product-img">
                     </div>
-                    <label id="change-passord-lbl">Change Password</label>
-                    <div id="password-box">
-                        <label class="invisible" id="error-lbl">Password is incorrect!!!</label>
-                        <label class="invisible" id="suc-lbl">Password Changed Succsessfuly!</label>
-                        <input class="password-input" id="password-input" type="password" placeholder="Current Password">
-                        <input class="password-input" id="repeat-password-input" type="password" placeholder="New Password">
-                        <button id="update-btn">Update Password</button>
-                    </div>
+                    <label id="type-label" >The Print</label>
+                    
                 </div>
-                <div id="history-box">
-                    <label id="order-lbl">Order History</label>
-                    <div id="order-box">
-                        <table id="order-table">
-                            <tr>
-                              <th>Title</th>
-                              <th>Price</th>
-                              <th>Date</th>
-                            </tr>
-                        </table>
+                <div id="product-box-right-side">
+                    <div id="product-info-bar">
+                        <label id="title-label">unknown</label>
+                        <label id="artist-label">unknown</label>
+                        <label id="price-label">unknown</label>
+                        
                     </div>
+                    <button id="buy-btn">BUY</button>
+                    <label class="invisible" id="suc-lbl">Congratulations you have successfully bought item!</label>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/main.js"></script>
-    <script src="./js/profile.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 </html>
